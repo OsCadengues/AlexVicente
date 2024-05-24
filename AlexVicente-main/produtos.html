@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Tecnologia Moderna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background-color: #000; /* Fundo preto */
+        }
+        header, footer {
+            background-color: #001f3f; /* Azul escuro */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff !important;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+        .nav-link.active {
+            color: #007bff !important;
+            border-bottom: 3px solid #007bff;
+        }
+        .nav-link:hover {
+            color: #007bff !important;
+            border-bottom: 3px solid #007bff;
+        }
+        .product-item {
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #001f3f; /* Azul escuro */
+            border: 1px solid #0056b3;
+        }
+        .card-title, .card-text, .btn {
+            color: #fff !important;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .carousel-item img {
+            height: 300px; /* Definindo uma altura maior para as imagens */
+            object-fit: contain; /* Garantir que a imagem se ajuste ao contêiner sem cortar */
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white text-center p-4">
+        <h1>Tecnologia Moderna</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="analises.html">Análises</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tutoriais.html">Tutoriais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <h2 class="text-center mb-4">Produtos em Destaque</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="telemovelCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#telemovelCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#telemovelCarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="tele1.png" alt="Telemóvel 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="tele2.webp" alt="Telemóvel 2">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#telemovelCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#telemovelCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Telemóvel</h5>
+                        <p class="card-text">Explore as funcionalidades avançadas dos nossos telemóveis mais recentes.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="laptopCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#laptopCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#laptopCarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="mac1.png" alt="Laptop 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="mac2.png" alt="Laptop 2">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#laptopCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#laptopCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Elegante</h5>
+                        <p class="card-text">Perfeito para profissionais e entusiastas de tecnologia.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="cameraCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#cameraCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#cameraCarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="cam1.png" alt="Câmera 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="cam2.webp" alt="Câmera 2">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#cameraCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#cameraCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Câmera Digital</h5>
+                        <p class="card-text">Capture momentos incríveis com tecnologia de ponta.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-white text-center p-3">
+        <p>2024© Tecnologia Moderna. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Ativa a classe 'active' no link correspondente à página atual
+            var pathname = window.location.pathname;
+            $('.nav-link').each(function() {
+                if ($(this).attr('href') === pathname) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
