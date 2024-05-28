@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000; /* Fundo preto */
+    color: #fff;
+}
+
+header {
+    background: #001f3f; /* Azul escuro */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionado */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #001f3f; /* Azul escuro */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: -100px; /* Esconde o rodapé inicialmente */
+    width: 100%;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.show-footer {
+    bottom: 0; /* Mostra o rodapé */
+}
+
+/* Estilos específicos para a seção de produtos */
+.product-display {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+    width: 30%;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.carousel-item img {
+    width: 100vw; /* Largura completa da viewport */
+    height: 60vh; /* Altura fixa para as imagens do slideshow */
+    object-fit: cover; /* Ajusta a imagem ao contêiner, cortando se necessário */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px; /* Aumenta o tamanho das setas */
+    height: 50px; /* Aumenta o tamanho das setas */
+}
+
+#analises {
+    padding: 20px;
+    background: #001f3f; /* Azul escuro */
+    color: #fff;
+}
+
+.review-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background: #001f3f; /* Azul escuro */
+    color: #fff;
+}
+
+#tutoriais {
+    padding: 20px;
+    background: #001f3f; /* Azul escuro */
+    color: #fff;
+}
+
+.tutorial-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background: #001f3f; /* Azul escuro */
+    color: #fff;
+}
+
+#contato {
+    background: #001f3f; /* Azul escuro */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-info {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+header, footer {
+    background-color: #001f3f; /* Azul escuro */
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff !important;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Atualizado */
+}
+
+.nav-link.active {
+    color: #007bff !important;
+    border-bottom: 3px solid #007bff; /* Atualizado */
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+    border-bottom: 3px solid #007bff; /* Atualizado */
+}
+
+.product-item {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #001f3f; /* Azul escuro */
+    border: 1px solid #0056b3;
+}
+
+.card-title, .card-text, .btn {
+    color: #fff !important;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.section {
+    padding: 60px 0; /* Adicionado */
+}
+
+.section h3 {
+    margin-bottom: 20px;
+    color: #007bff; /* Adicionado */
+}
+
+.section p {
+    margin-bottom: 40px; /* Adicionado */
+}
+
+.section.bg-dark {
+    background-color: #001f3f; /* Adicionado */
+}

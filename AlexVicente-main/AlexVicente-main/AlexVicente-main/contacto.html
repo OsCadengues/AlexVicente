@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tecnologia Moderna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background-color: #000; /* Fundo preto */
+        }
+        header, footer {
+            background-color: #001f3f; /* Azul escuro */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff !important;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+        .nav-link.active {
+            color: #007bff !important;
+            border-bottom: 3px solid #007bff;
+        }
+        .nav-link:hover {
+            color: #007bff !important;
+            border-bottom: 3px solid #007bff;
+        }
+        .product-item {
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #001f3f; /* Azul escuro */
+            border: 1px solid #0056b3;
+        }
+        .card-title, .card-text, .btn {
+            color: #fff !important;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .carousel-item img {
+            height: 300px; /* Definindo uma altura maior para as imagens */
+            object-fit: contain; /* Garantir que a imagem se ajuste ao contêiner sem cortar */
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white text-center p-4">
+        <h1>Tecnologia Moderna</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="analises.html">Análises</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tutoriais.html">Tutoriais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <h2 class="text-center mb-4">Entre em Contacto</h2>
+        <p class="lead text-center">Tem alguma dúvida ou precisa de ajuda? Não hesite em nos contactar através do email abaixo ou pelas nossas redes sociais.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Email</h3>
+                <p><a href="mailto:oscadengues@gmail.com">oscadengues@gmail.com</a></p>
+            </div>
+            <div class="col-md-6">
+                <h3>Redes Sociais</h3>
+                <p>Siga-nos e fique por dentro das últimas novidades:</p>
+                <a href="https://www.facebook.com" class="btn btn-primary">Facebook</a>
+                <a href="https://www.twitter.com" class="btn btn-info">Twitter</a>
+                <a href="https://www.instagram.com" class="btn btn-danger">Instagram</a>
+            </div>
+        </div>
+    </main>
+    <footer class="text-white text-center p-3">
+        <p>2024© Tecnologia Moderna. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Ativa a classe 'active' no link correspondente à página atual
+            var pathname = window.location.pathname;
+            $('.nav-link').each(function() {
+                if ($(this).attr('href') === pathname) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
